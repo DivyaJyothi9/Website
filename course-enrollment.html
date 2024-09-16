@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="course-enrollment.css">
+    <title>Sathyabama Institute - Course Enrollment</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav-logo">
+                <p>Sathyabama Institute - NPTEL Course Enrollment</p>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="website.html" class="link">Home</a></li>
+                    <li><a href="course-enrollment.html" class="link active">Course Enrollment</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!------------------- course enrollment form -------------------------->
+        <div class="course-enrollment">
+            <h1>Course Enrollment</h1>
+            <form id="enrollmentForm">
+                <div class="input-group">
+                    <label for="student-name">Name:</label>
+                    <input type="text" id="student-name" placeholder="Student Name" required>
+                </div>
+                <div class="input-group">
+                    <label for="reg-no">Reg No:</label>
+                    <input type="text" id="reg-no" placeholder="Registration Number" required>
+                </div>
+                <div class="input-group">
+                    <label for="year">Year:</label>
+                    <input type="text" id="year" placeholder="Year" required>
+                </div>
+                <div class="input-group">
+                    <label for="email-id">Email ID:</label>
+                    <input type="email" id="email-id" placeholder="Email ID" required>
+                </div>
+                <div class="input-group">
+                    <label for="course-name">Course Name:</label>
+                    <input type="text" id="course-name" placeholder="Course Name" required>
+                </div>
+                <div class="input-group">
+                    <label for="duration">Duration:</label>
+                    <input type="text" id="duration" placeholder="Course Duration" required>
+                </div>
+                <div class="input-group">
+                    <label for="mentor">Choose a Mentor:</label>
+                    <select id="mentor" required>
+                        <option value="" disabled selected>Select a Mentor</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">Enroll</button>
+            </form>
+        </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
